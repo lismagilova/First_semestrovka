@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <style type="text/css">
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display:flex;
+        align-items:baseline;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        background-color: #3dbee5;
+      }
+
+      .form-signin {
+        width: 100%;
+        max-width: 330px;
+        height: auto;
+        padding: 10px;
+        margin: auto;
+      }
+
+      .form-signin .checkbox {
+        font-weight: 400;
+      }
+
+      .form-signin .form-floating:focus-within {
+        z-index: 2;
+      }
+
+      .top {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      .middle{
+          border-radius: 0;
+          margin-bottom: -1px;
+      }
+
+      .bottom {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      /* Style the navigation menu */
+      .navbar {
+        width: 100%;
+        background-color: #555;
+        overflow: auto;
+      }
+
+      /* Navigation links */
+      .navbar a {
+        float: left;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+       /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+        text-align: center; /* If you want the text to be centered */
+      }
+
+      /* Add a background color on mouse-over */
+      .navbar a:hover {
+        background-color: #000;
+      }
+
+      /* Style the current/active link */
+      .navbar a.active {
+        background-color: #04AA6D;
+      }
+    </style>
+  </head>
+  <body class="text-center">
+    <div class="navbar
+    ">
+      <a class="active" href="index.html">Home</a>
+      <a href="#">Offers</a>
+      <a href="#">Product</a>
+      <a href="#">Cart</a>
+      <a href="contact.html">Contact</a>
+  </div>
+
+    <main class="form-signin">
+      <form action="" method="POST">
+        <h1 class="h3 mb-3 fw-normal"></h1>
+        <input type="text" name="fName" class="form-control top" placeholder="First name" required autofocus>
+        <input type="text" name="lName" class="form-control middle" placeholder="Last name" required>
+        <input type="email" name="email" class="form-control bottom" placeholder="email@mail.com" required>
+
+        <!-- <div class="form-floating"><input type="text" class="form-control top" placeholder="First name" required autofocus></div>
+        <div class="form-floating"><input type="text" class="form-control middle" placeholder="Last name" required></div>
+        <div class="form-floating"><input type="email" class="form-control bottom" placeholder="email@mail.com" required></div>-->
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up!!</button>
+
+
+      </form>
+    </main>
+      </body>
+</html>

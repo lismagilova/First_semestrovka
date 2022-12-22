@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+      font-family: 'Poppins', sans-serif;
+      }
+
+      .navigationbar{
+          display: flex;
+          align-items: center ;
+          padding: 20px;
+      }
+
+      nav{
+          flex: 1;
+          text-align: center;
+      }
+      nav ul{
+          display: inline-block;
+          list-style-type: none;
+      }
+      nav ul li{
+          display: inline-block;
+          margin-right: 20px;
+      }
+      a{
+          text-decoration: none;
+          color: #555;
+          font-family: "Comic Sans MS", serif;
+      }
+      p{
+          color: #555;
+      }
+      .container{
+          max-width: 1300px;
+          margin: auto;
+          padding-left: 25px;
+      }
+      .row{
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+      .col-2{
+          flex-basis: 50%;
+          min-width: 300px;
+      }
+      .col-2 img{
+          max-width: 75%;
+          padding: 50px 0;
+      }
+      .col-2 h1{
+          font-size:40px;
+          line-height: 40px;
+          margin: 25px 0;
+          color: #132f5c;
+          font-family: "Comic Sans MS", serif;
+      }
+      .btn{
+          display: inline-block;
+          background:#f98c96;
+          color: #fff;
+          padding: 8px 30px;
+          margin:30px 0;
+          border-radius:30px;
+          transition: background 0.25s;
+      }
+      .btn:hover{
+          background: #394d64;
+      }
+      .header{
+          background: #f4f4e6;
+      }
+      .header .row{
+          margin-top: 70px;
+
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Интернет магазин манг</title>
+  </head>
+  <body>
+    <div class="header">
+    <div class="container">
+    <div class="navigationbar">
+      <div class="logo">
+        <img src="../static/assets/image/logo.png" width="80px">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Главная</a></li>
+          <li><a href="/items">Товары</a></li>
+          <li><a href="/login">Войти</a></li>
+        </ul>
+      </nav>
+      <img src="../static/assets/image/cart.png" width="60px">
+    </div>
+    {% block content %}{% endblock %}
+  </div>
+</div>
+</body>
+</html>
+

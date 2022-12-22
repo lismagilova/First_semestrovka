@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Войти</title>
+    <style type="text/css">
+      body,html{
+          margin: 0;
+          padding: 0;
+          font-size: 15px;
+          background: #34495e;
+          height: 100%;
+        }
+        .img-area{
+          background-image: url("https://cdn.pixabay.com/photo/2018/02/06/08/04/orange-3134148_1280.png");
+          -webkit-background-size: cover;
+          background-size: cover;
+          background-repeat:no-repeat;
+          background-position: center center;
+          height: 100%;
+        }
+        .container{
+          width:300px;
+          padding: 40px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          background: #ffffff;
+          text-align: center;
+          border-radius: 5px;
+          box-shadow: 0 50px 50px;
+        }
+        .container h1{
+          color: #394d64;
+          font-size: 25px;
+          font-weight: 500;
+          font-family: "Comic Sans MS", serif;
+        }
+        .container input[type="text"],.container input[type="password"]{
+          background: none;
+          display: block;
+          margin: 20px auto;
+          text-align: left;
+          border: 2px solid #383838;
+          padding: 14px 10px;
+          width: 200px;
+          outline: none;
+          color: rgb(0, 0, 0);
+          font-size: 14px;
+          transition: 0.25s;
+        }
+        .container input[type="button"]{
+          background: #394d64;
+          margin: 0 auto;
+          text-align: center;
+          padding: 10px 89px;
+          outline: none;
+          color: #FFFFFF;
+          font-size: 15px;
+          font-family: "Comic Sans MS",serif;
+        }
+        .container input[type="button"]:hover {
+          background: #f98c96;
+          border-color: #f978a0;
+        }
+    </style>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  </head>
+  <body>
+    <script src="../static/scriptlogin.js"></script>
+    <div class="img-area"></div>
+    <form class="container"name="myForm" method="post">
+      <div class="logo">
+        <img src="../static/assets/image/logo.png" width="125px">
+      </div>
+      <h1 class="name">НедоХентай</h1>
+      <input type="text" name="uname" placeholder="Логин">
+      <input type="password" name="pass" placeholder="Пароль">
+      <input type="button" name="log" value="Войти" onclick="myfunc()">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style type="text/css">
+    .roww {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+    .coll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .named {
+        font-family: "Comic Sans MS", serif;
+        width: 120px;
+        height: 40px;
+        margin-top: 10px;
+    }
+</style>
+<div class="roww">
+      <div class="coll">
+          <img src="../static/assets/image/one%20piece.png" alt="" height="200">
+          <button class="named">Ван Пис</button>
+      </div>
+      <div class="coll">
+          <img src="../static/assets/image/berserk.png" alt="" height="200">
+          <button class="named">Берсерк</button>
+      </div>
+      <div class="coll">
+          <img src="../static/assets/image/dogs.png" alt="" height="200">
+          <button class="named">Великий из бродячих псов</button>
+      </div>
+</div>
+<div class="roww">
+      <div class="coll">
+          <img src="../static/assets/image/how%20to%20fight.png" alt="" height="200">
+          <button class="named">Борьба в прямом эфире</button>
+      </div>
+      <div class="coll">
+          <img src="../static/assets/image/titans.png" alt="" height="200">
+          <button class="named">Атака на титанов</button>
+      </div>
+      <div class="coll">
+          <img src="../static/assets/image/wind%20braker.png" alt="" height="200">
+          <button class="named">Ветролом</button>
+      </div>
+</div>
+<div class="roww">
+      <div class="coll">
+          <img src="../static/assets/image/man.png" alt="" height="200">
+          <button class="named">Человек-бензопила</button>
+      </div>
+      <div class="coll">
+          <img src="../static/assets/image/cheese.png" alt="" height="200">
+          <button class="named">Сыр в мышеловке</button>
+      </div>
+      <div class="coll">
+          <img src="../static/assets/image/naruto.png" alt="" height="200">
+          <button class="named">Наруто</button>
+      </div>
+</div>
+{% endblock %}
